@@ -10,10 +10,10 @@ int main()
 	printf("Enter a file you want to write onto:\n");
 	gets(realFile);
 	FD = fopen(realFile,"w");
-	if (FD==NULL)
+	if (FD==None)
 	{
 		printf("Failed to open a file for writing the data you entered.");
-		exit(1);
+		return 1;
 	}
 	
 	printf("Enter a text you want to write onto the file:\n");
